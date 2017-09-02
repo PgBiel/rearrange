@@ -28,7 +28,7 @@ export default class GUI extends Component {
 
   static letterRearranger(str) {
     if (!str) return "";
-    return str.replace(/[a-z]{3,}/ig, word => {
+    return str.replace(/[a-z]{4,}/ig, word => {
       const [, first, middle, last] = word.match(/^(.)(.+)(.)$/);
       const middleRearranged = shuffleArray(middle.split("")).join("");
       return first + middleRearranged + last;
