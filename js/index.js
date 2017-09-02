@@ -114,7 +114,7 @@ var GUI = function (_Component) {
     key: "letterRearranger",
     value: function letterRearranger(str) {
       if (!str) return "";
-      return str.replace(/[a-z]{3,}/ig, function (word) {
+      return str.replace(/[a-z]{4,}/ig, function (word) {
         var _word$match = word.match(/^(.)(.+)(.)$/),
             _word$match2 = _slicedToArray(_word$match, 4),
             first = _word$match2[1],
